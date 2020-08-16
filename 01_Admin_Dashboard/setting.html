@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap/css/fontawesome-all.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>UiBrains Dashboard</title>
+</head>
+<body>
+<!--main navigation-->
+<nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+   <div class="container">
+       <a href="index.html" class="navbar-brand text-warning">
+          <i class="fa fa-snowflake fa-spin"></i> UiBrains</a>
+        <div class="collapse navbar-collapse"  id="uiNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fa fa-chart-bar text-muted"></i> Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="task.html"  class="nav-link">
+                        <i class="fa fa-list text-muted"></i>Tasks</a>
+                </li>
+           
+                <li class="nav-item">
+                    <a href="categories.html"  class="nav-link">
+                        <i class="fa fa-sitemap text-muted"></i>Categories</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="employee.html"  class="nav-link">
+                        <i class="fa fa-users text-muted"></i>Employees</a>
+                </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                   <li class="nav-item dropdown">
+                      <a href="#" class="nav-link" data-toggle="dropdown">
+                          <i class="fa fa-sign-in-alt text-muted"></i>Govardhan
+                          <i class="fa fa-caret-down"></i>
+                      </a> 
+                    <div class="dropdown-menu">
+                       <a href="profile.html" class="dropdown-item">
+                           <i class="fa fa-user-circle"></i>Profile</a>
+                       <a href="setting.html" class="dropdown-item">
+                           <i class="fa fa-cog"></i> Settings</a>
+                   </div>
+                  </li> 
+                  <li class="nav-item">
+                    <a href="login.html"  class="nav-link">
+                        <i class="fa fa-sign-out-alt text-muted"></i>Logout</a>
+                </li> 
+                </ul>
+        </div>  
+   </div> 
+</nav>
+<!--Seetings  intro-->
+<section class="bg-teal text-white p-3">
+    <div class="container">
+     <div class="row">
+         <div class="col-md-6">
+            <h1>
+            <i class="fa fa-cog"></i>  
+            Settings</h1>
+        </div>
+        <div class="col-md-6">
+           <!--empty-->
+        </div>
+    </div>
+    </div>  
+</section>
+<!--button section-->
+<section class="p-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="index.html" class="btn btn-secondary btn-block">
+                    <i class="fa fa-arrow-alt-circle-left"></i>
+                   Dashboard 
+                </a>
+            </div>
+            <div class="col-md-3">
+                <!--empty-->
+            </div>
+            <div class="col-md-3">
+               <!--empty-->
+            </div>
+            <div class="col-md-3">
+               <a href="index.html" class="btn btn-warning btn-block">
+                   <i class="fa fa-check-circle"></i>
+                   Save Changes
+               </a> 
+            </div>
+        </div>
+    </div>
+</section>
+<!--login-section-->
+<section class="p-3">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-warning text-white">
+                        <h3>Edit Settings</h3>
+                    </div>
+                    <div class="card-body">
+                        <fieldset class="form-group">
+                            <legend>Allow Form Registration</legend>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="yes" class="form-check-input">Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="yes" class="form-check-input">No
+                                </label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <legend>Home Page Format</legend>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="No" class="form-check-input">Post Index
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                 <label class="form-check-label">
+                                    <input type="radio" name="No" class="form-check-input">Single Page
+                                 </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--password modal-->
+<div class="modal" id="password-modal">
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+            <h2>Change Password</h2>
+            <button class="close">
+                <i class="fa fa-window-close text-white"></i>
+            </button> 
+        </div>
+        <form>
+            <div class="modal-body">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="New Password">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Confirm Password">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="close" class="btn btn-secondary">Close</button> 
+                <button type="submit" class="btn btn-primary">Change password</button>
+            </div>
+        </form>
+  </div>
+</div>
+</div>
+<!--footer-->
+<footer class="bg-dark text-white">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col">
+              <h1>Copyright &copy; 2018,UiBrains.com </h1>
+              <p>All Rights Reserved</p>
+              <p>Developed & Maintained<a href="#" class="text-warning">
+                  <i class="fa fa-user-circle"></i> Govardhan Aaleswara</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- BODY ENDS -->
+<script src="../bootstrap/js/fontawesome-all.js"></script>
+<script src="../bootstrap/js/jquery-3.2.1.min.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/mdb.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace( 'editor1' );
+</script>
+</body>
+</html>
